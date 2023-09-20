@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Victor A. Rodriguez</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <!-- myclasses -->
+<!--    <link href="css/myclasses.css">-->
+	<style>
+	table {
+/*	  font-family: arial, sans-serif;*/
+	  border-collapse: collapse;
+	  width: 60%;
+	}
+
+	td, th {
+/*	  border: 1px solid #dddddd;*/
+	  text-align: left;
+	  padding: 4px;
+	}
+
+	tr:nth-child(odd) {
+	  background-color: #E7F0F9;
+	}
+    
+.clipped {
+   clip-path: circle();
+/*
+   height: 200px;
+   width: 200px;
+*/
+}
+    
+.circular--portrait {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+  margin-top: -10px;
+}
+    
+.circle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+/*  position: relative;*/
+}
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+    
+	</style>
+  </head>
+  <body>
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-6">
+<!--          <h1>Victor A. Rodriguez&nbsp;</h1>-->
+          <a href="index.html" style="text-decoration:none;color:inherit;" ><h1>Victor A. Rodriguez&nbsp;</h1></a>
+        </div>
+<!--
+        <div class="col-6">
+          <p class="text-right"><a href="">Download my Resume</a></p>
+        </div>
+-->
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="media">
+<!--
+            <div class="circular--portrait">
+              <img src="images/bix1.png"/>
+            </div> 
+-->
+<!--
+            <div class="circle-image">
+              <img src="images/bix1.png"/>
+            </div> 
+-->
+<!-- PIC: Display one picture at random    -->
+<!--              <div class="circle-image">  -->
+              <div class="circular--portrait">
+                <img id="randomImage" src="" alt="Random Circular Image">
+              </div>
+              <script>
+                // Array of image URLs
+                const imageUrls = [
+                  'images/bix1.jpg',
+                  'images/bix2.jpg',
+                  'images/bix3.jpg'
+                ];
+
+                // Get a random index from the imageUrls array
+                const randomIndex = Math.floor(Math.random() * imageUrls.length);
+
+                // Set the src attribute of the img element to the randomly chosen image URL
+                const randomImage = document.getElementById('randomImage');
+                randomImage.src = imageUrls[randomIndex];
+              </script>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="media-body">
+              <p></p>
+              <p> I am a theoretical physicist working at Princeton University as an associate research scholar. </p>
+              <p> The two main subjects of my research are fundamental aspects of string theory and bootstrap techniques to solve strongly coupled physical systems. </p>
+</div> 
+        </div>
+<!--
+          <p></p>
+          <p> Recently, I have been interested in using string theory to learn about the quantum dynamics of particles in cosmological spacetimes; using string theory to study non-perturbative quantum effects in two-dimensional gravity; and bootstrapping statistical systems on a lattice.&nbsp;</p>
+-->
+</div>
+        <div class="col-md-4 col-sm-12">
+          <div class="row justify-content-md-around m-1">
+            <address>
+              <strong>Victor A. Rodriguez</strong><br>
+<!--              Future Faculty in the Physical Sciences fellow <br>-->
+              office: Jadwin 345 <br>
+              email: <a href="mailto:#">vrodriguez@princeton.edu</a>
+            </address>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-12 col-sm-12 col-xl-12">
+        <p></p>
+        <p> Recently, I have been interested in using string theory to learn about the quantum dynamics of particles in cosmological spacetimes; using string theory to study non-perturbative quantum effects in two-dimensional gravity; and bootstrapping statistical systems on a lattice.&nbsp;</p>
+      </div>
+      <hr>
+
+      
+      
+      
+<!-- RESEARCH INTERESTS -->
+	  <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2 style="margin-bottom: 20px;">Research interests</h2>
+<!--
+			<h2 >Research interests</h2>
+			<br>
+-->
+			<ul>
+<!--			  <li> worldsheet string perturbation theory 	</li>-->
+        <li> worldsheet string perturbation theory: D-instantons, 2D string theories, matrix models and duality 	</li>
+			  <li> cosmological backgrounds in string theory  </li>
+			  <li> bootstrap techniques to solve strongly coupled physical systems 	</li>
+			</ul>
+        </div>
+      </div>
+      <hr>
+
+<!-- PUBLICATIONS -->
+	  <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2 style="margin-bottom: 20px;">Papers and talks</h2>
+			<ul>
+			  <li> For a complete and up-to-date list of my publications please visit my <a href="https://inspirehep.net/authors/2020367?ui-citation-summary=true" target="_blank">inSPIRE profile</a> 	</li>
+			  <li> Here are <a href="talks.html">slides and links</a> for some of my recent talks 	</li>
+			  <li> Click here for old code that I used in previous papers	</li>
+			</ul>
+        </div>
+      </div>
+      <hr>
+		
+<!-- CV etc -->
+	  <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h4 style="margin-bottom: 20px;">Brief CV</h4>
+		</div>
+      </div>
+  <table>
+<!--
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+-->
+  <tr>
+<!--    <td> 2021 <span>&#8212;</span> </td>-->
+	<td> post-doctoral fellow </td> 
+	<td> Princeton University </td>
+	<td> 2021 <span>&#8212;</span> </td>
+  </tr>
+  <tr>
+<!--    <td> 2021  </td>-->
+	<td> PhD student </td> 
+	<td> Harvard University </td>
+	<td>   </td>
+  </tr>
+  <tr>
+<!--    <td>   </td>-->
+	<td> undergraduate </td> 
+	<td> University of Texas at Austin </td>
+	<td>  </td>
+  </tr>
+  </table>
+  <hr>	
+		
+
+<!-- from template -->
+<!--
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h2>Education</h2>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <h4>College of Web Design</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Jan 2002 - Dec 2006</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Bachelors</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, recusandae, corporis, tempore nam fugit deleniti sequi excepturi quod repellat laboriosam soluta laudantium amet dicta non ratione distinctio nihil dignissimos esse!</p>
+          <div class="row">
+            <div class="col-6">
+              <h4>University of Web Design</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Jan 2007 - Dec 2008</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Masters</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, recusandae, corporis, tempore nam fugit deleniti sequi excepturi quod repellat laboriosam soluta laudantium amet dicta non ratione distinctio nihil dignissimos esse!</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>Skill Set</h2>
+          <hr>
+        </div>
+      </div>
+      <hr>
+
+
+      <h2>Work Experience</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>ABC Corp.</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Jan 2002 - Dec 2006</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Web Developer</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, recusandae, corporis, tempore nam fugit deleniti sequi excepturi quod repellat laboriosam soluta laudantium amet dicta non ratione distinctio nihil dignissimos esse!</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>XYZ Corp.</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Jan 2002 - Dec 2006</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Senior Web Developer</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, recusandae, corporis, tempore nam fugit deleniti sequi excepturi quod repellat laboriosam soluta laudantium amet dicta non ratione distinctio nihil dignissimos esse!</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <h2>Portfolio</h2>
+      <hr>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+        </div>
+      </div>
+      <hr>
+-->
+
+<!--
+      <h2>Contact</h2>
+      <hr>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8  col-12 jumbotron">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr>
+-->
+      
+      <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p>Copyright © vrodriguez. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
