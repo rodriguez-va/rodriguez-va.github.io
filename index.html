@@ -18,8 +18,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	  <!-- myclasses -->
-<!--    <link href="css/myclasses.css">-->
+    <link href="css/myclasses.css" rel="stylesheet">
 	<style>
 	table {
 /*	  font-family: arial, sans-serif;*/
@@ -33,10 +32,6 @@
 	  padding: 3px 6px;
 	}
 
-	tr:nth-child(odd) {
-	  background-color: #E7F0F9;
-	}
-    
 .clipped {
    clip-path: circle();
 /*
@@ -54,9 +49,11 @@
 }
 
 .circular--portrait img {
+  display: block;
   width: 100%;
-  height: auto;
-  margin-top: -10px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
 }
     
 .circle-image {
@@ -106,12 +103,12 @@
 <!-- PIC: Display one picture at random    -->
 <!--              <div class="circle-image">  -->
               <div class="circular--portrait">
-                <img id="randomImage" src="" alt="Random Circular Image">
+                <img id="randomImage" src="" alt="Portrait of Victor A. Rodriguez">
               </div>
               <script>
                 // Array of image URLs
                 const imageUrls = [
-                  'images/bix1.jpg',
+                  'images/bix1.jpg?v=20261102',
                   'images/bix2.jpg',
                   'images/bix3.jpg'
                 ];
@@ -127,22 +124,37 @@
             &nbsp;&nbsp;&nbsp;&nbsp;
             <div class="media-body">
               <p></p>
-              <p> I am a theoretical physicist working at UC Santa Barbara as a postdoctoral fellow. </p>
-              <!-- <p> The two main subjects of my research are fundamental aspects of string theory and bootstrap techniques to solve strongly coupled physical systems. </p> -->
-              <p> My research focuses on developing computational and analytical techniques to study strongly coupled quantum field theories, string theories, and statistical systems. I am particularly interested in using these methods to tackle problems in quantum gravity and quantum cosmology.
+              <p> I'm a theoretical physicist working on non-perturbative approaches in quantum fields, strings, and gravity. </p>
+              <p> I'm currently a <a href="https://ppfp.ucop.edu/info/" target="_blank" rel="noopener noreferrer">University of California President's Postdoctoral Fellow</a> at <a href="https://www.physics.ucsb.edu/people/victor-rodriguez" target="_blank" rel="noopener noreferrer">UC Santa Barbara</a>. Before that I was a postdoc at <a class="institution-link" href="https://futurefaculty.princeton.edu/people/victor-alonso-rodriguez" target="_blank" rel="noopener noreferrer">Princeton University</a>. I obtained my PhD in theoretical physics at <a href="https://hetg.physics.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard University</a> in 2021. </p>
+              <!--  <p> My research focuses on developing computational and analytical techniques to study strongly coupled quantum field theories, string theories, and statistical systems. I am particularly interested in using these methods to tackle problems in quantum gravity and quantum cosmology. -->
             </div> 
         </div>
 
 </div>
         <div class="col-md-4 col-sm-12">
           <div class="row justify-content-md-around m-1">
-            <address>
-              <strong>Victor A. Rodriguez</strong><br>
-<!--              Future Faculty in the Physical Sciences fellow <br>-->
-              University of California, Santa Barbara <br>
-              Department of Physics  <br>
-              office: Broida 6111 <br>
-              email: <a href="mailto:#">varodriguez@ucsb.edu</a>
+            <address class="contact-details">
+              <strong>Victor A. Rodriguez</strong>
+              <div class="contact-line">
+                <img class="contact-icon" src="images/icons/map-marker-alt.svg" alt="" aria-hidden="true">
+                <div>
+                  University of California, Santa Barbara<br>
+                  Department of Physics<br>
+                  Office: Broida 6125
+                </div>
+              </div>
+              <div class="contact-line">
+                <img class="contact-icon" src="images/icons/envelope.svg" alt="" aria-hidden="true">
+                <div><span class="sr-only">Email: </span><a href="mailto:varodriguez@ucsb.edu">varodriguez@ucsb.edu</a></div>
+              </div>
+              <div class="contact-line">
+                <img class="contact-icon" src="images/icons/globe.svg" alt="" aria-hidden="true">
+                <a href="https://www.physics.ucsb.edu/people/victor-rodriguez" target="_blank" rel="noopener noreferrer">UCSB Physics profile</a>
+              </div>
+              <div class="contact-line">
+                <img class="contact-icon" src="images/icons/github.svg" alt="" aria-hidden="true">
+                <a href="https://github.com/rodriguez-va" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
             </address>
           </div>
         </div>
@@ -167,9 +179,11 @@
 -->
 			<ul>
 <!--			  <li> worldsheet string perturbation theory 	</li>-->
-        <li> worldsheet string  theory: D-instantons, 2d string theories, matrix models and duality, string amplitudes 	</li>
-			  <li> cosmological backgrounds in string theory  </li>
+        <li> worldsheet string theory: D-instantons, 2d string theories, matrix models and duality, string amplitudes </li>
+			  <li> low-dimensional quantum gravity </li>
+        <li> cosmological backgrounds in string theory  </li>
 			  <li> bootstrap techniques to solve strongly interacting physical systems 	</li>
+        <li> AI for theoretical physics </li>
 			</ul>
         </div>
       </div>
@@ -182,7 +196,7 @@
 			<ul>
 			  <li> For a complete and up-to-date list of my publications please visit my <a href="https://inspirehep.net/authors/2020367?ui-citation-summary=true" target="_blank">inSPIRE profile</a> 	</li>
 			  <li> Here are <a href="talks.html">slides and links</a> for some of my recent talks 	</li>
-<!--			  <li> Click here for old code that I used in previous papers	</li>-->
+        <li> Useful git repos: <a href="https://github.com/davidsd/fortuity" target="_blank" rel="noopener noreferrer">Fortuity</a> </li>
 			</ul>
         </div>
       </div>
